@@ -18,11 +18,49 @@ body {
 }
 
 .social-link:hover, .social-link:focus {
-    background: #ddd;
+    background: blue;
     text-decoration: none;
-    color: #555;
+    color: whitesmoke;
 }
 
 .progress {
     height: 10px;
 }
+#ex4 .p1[data-count]:after{
+    position:absolute;
+    right:10%;
+    top:8%;
+    content: attr(data-count);
+    font-size:40%;
+    padding:.2em;
+    border-radius:50%;
+    line-height:1em;
+    color: white;
+    background:rgba(255,0,0,.85);
+    text-align:center;
+    min-width: 1em;
+    font-weight:bold;
+  }
+  
+
+
+
+  h5 {
+    display: inline-block;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .full-screen {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+  .circle-container {
+    @include on-circle($item-count: 8, $circle-size: 20em, $item-size: 6em); 
+    margin: 5em auto 0;
+    border: solid 5px tomato;
+  }
