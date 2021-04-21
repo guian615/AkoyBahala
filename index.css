@@ -2,6 +2,19 @@ body {
     min-height: 100vh;
     background: #fafafa;
 }
+.navbar-nav.navbar-center {
+  position: relative;
+  left: 50%;
+  transform: translatex(-50%);
+}
+ul li {
+  text-align: center;
+  list-style: none;
+}
+
+li:not(:last-child) {
+margin-right: 1em;
+}
 
 
 .social-link {
@@ -66,15 +79,15 @@ body {
 .boss:hover{
   color: white;
 }
-  .new:hover{
+  /* .new:hover{
     background-color: grey;
     color: whitesmoke;
-    
+
   }
 
   .new:hover+i .boss{
     color: white;
-  }
+  } */
 
   	/*=-footer-=*/
     footer {
